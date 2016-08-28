@@ -43,7 +43,6 @@ app.controller("OverSpeedingController", function($scope, $http) {
     $scope.getOverSpeedingDevicelist = function(){
         console.log('The starttime is : ' +  $scope.TimeRange.starttime);
     console.log('Trying to connect to node.js server');
-    console.log('The starttime being sent is :' + $scope.starttime);
         $http.post('/tracker/getOverSpeedingDevices',$scope.TimeRange)
         .success(function(data) {
             $scope.overspeedingdevicelist = data;

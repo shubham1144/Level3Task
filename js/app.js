@@ -22,19 +22,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('StationaryDevices', {
             // we'll get to this in a bit 
             url: '/fetchstationarydevices',
-            templateUrl: 'home.html'      
+            templateUrl: 'stationaryDevices.html'     
         })
         //fetch overspeeding devices state
         .state('OverSpeedingDevices', {
             // we'll get to this in a bit 
             url: '/fetchoverspeedingdevices',
-            templateUrl: 'home.html'      
+            templateUrl: 'OverSpeedingDevices.html'      
         })
         //Geo dwell
         .state('Geodwell', {
             // we'll get to this in a bit 
             url: '/geodwell',
-            templateUrl: 'home.html'      
+            templateUrl: 'GeoDwell.html'      
         })
         //SystemHealth
         .state('SystemHealth', {

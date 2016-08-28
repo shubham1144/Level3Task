@@ -1,0 +1,39 @@
+<div class="form-group">
+<label>Starttime</label>
+<input class="form-control" placeholder="Starttime" ng-model="TimeRange.starttime">
+</div>
+
+
+<div class="form-group">
+<label>Stop time</label>
+<input class="form-control" placeholder="stoptime" ng-model="TimeRange.stoptime">
+</div>
+
+<button ng-click="getStationaryDevicelist()">Analyze</button>
+
+ <!-- table content starts here -->
+                <div class = "row" ng-show="stationarydeviceList.length > 0">
+                    <div class="col-lg-6">
+                    <h4>Devices stationary more than two minutes</h4>
+                    <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                            <tr>
+                            <th>Number</th>
+                            <th>Unique Device_Identity</th>
+                             <th>Stationary Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="device in stationarydeviceList">
+                            <td>{{$index + 1}}</td>
+                            <td>{{device.device}}</td>
+                            <td>{{device.duration}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+
+                </div>
+                <!-- table content ends here -->

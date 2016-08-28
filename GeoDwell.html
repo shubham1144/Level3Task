@@ -1,20 +1,20 @@
-<div class="form-group">
+<div class="form-group" style="width: 50%;">
 <label>Starttime</label>
 <input class="form-control" type="datetime-local"  name="starttime" ng-model="TimeRange.starttime">
 </div>
 
 
-<div class="form-group">
+<div class="form-group" style="width: 50%;">
 <label>Stop time</label>
 <input class="form-control" type="datetime-local"  name="stoptime" ng-model="TimeRange.stoptime">
-</div
-<div class="form-group">
+</div>
+<div class="form-group" style="width: 50%;">
 <label>Latitude</label>
 <input type="number" class="form-control" placeholder="Latitude" ng-model="TimeRange.Latitude">
 </div>
 
 
-<div class="form-group">
+<div class="form-group" style="width: 50%;">
 <label>Longitude</label>
 <input type="number" class="form-control" placeholder="Longitude" ng-model="TimeRange.Longitude">
 </div>
@@ -23,7 +23,7 @@
  <!-- table content starts here -->
                 <div class = "row" ng-show="inrangedevices.length > 0">
                     <div class="col-lg-6">
-                    <h4>Devices within 10 km range of above latitude and longitude</h4>
+                    <h4><small>Devices within 10 km range of above latitude and longitude</small></h4>
                     <div class="table-responsive">
                     <table class="table table-bordered table-hover table-striped">
                         <thead>

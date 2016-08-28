@@ -1,16 +1,17 @@
-<div class="form-group">
+<div class="form-group" style="width: 50%;">
 <label>Device Identity</label>
-<input class="form-control" placeholder="Device Identity" ng-model="TimeRange.Device_identity">
+<select class="form-control" ng-init="getDevicelist()" ng-model="TimeRange.Device_identity" ng-options="device for device in deviceList">
+</select>
 </div>
 
 
-<div class="form-group">
+<div class="form-group" style="width: 50%;">
 <label>Starttime</label>
 <input class="form-control" type="datetime-local"  name="starttime" ng-model="TimeRange.starttime">
 </div>
 
 
-<div class="form-group">
+<div class="form-group" style="width: 50%;">
 <label>Stop time</label>
 <input class="form-control" type="datetime-local"  name="stoptime" ng-model="TimeRange.stoptime">
 </div>
@@ -19,8 +20,8 @@
 
  <!-- table content starts here -->
                 <div class = "row" ng-show="DeviceData.length > 0">
-                    <div class="col-lg-6">
-                    <h4>Devices stationary more than two minutes</h4>
+                    <div class="col-lg-8">
+                    <h4>Devices stationary for more than 2 minutes</h4>
                     <div class="table-responsive">
                     <table class="table table-bordered table-hover table-striped">
                         <thead>

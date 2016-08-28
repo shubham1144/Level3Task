@@ -4,7 +4,7 @@ app.controller("devicetrackController", function($scope, $http) {
     $scope.deviceList = [];
 	//Send a request to server to get list of devices connected
 	$scope.getDevicelist = function(){
-    console.log('Trying to connect to node.js server');
+    //console.log('Trying to connect to node.js server');
 		$http.get('/tracker/listDevicesOnSystem')
         .success(function(data) {
             $scope.deviceList = data;

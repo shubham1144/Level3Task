@@ -46,7 +46,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('DevicePositions', {
             // we'll get to this in a bit 
             url: '/devicepositions',
-            templateUrl: 'home.html'      
+            templateUrl: 'DevicePositionTracker.html'      
         });
 
         

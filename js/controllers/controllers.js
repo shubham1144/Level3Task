@@ -81,4 +81,18 @@ app.controller("OverSpeedingController", function($scope, $http) {
             console.log('Error: ' + data);
         });
     }; 
+     //Send a request to obtain CPU utilization %
+    $scope.getDevicePositions = function(){
+        console.log('The starttime is : ' +  $scope.TimeRange.starttime);
+    console.log('Trying to connect to node.js server');
+    console.log('The starttime being sent is :' + $scope.starttime);
+        $http.post('/tracker/getDevicePositions',$scope.TimeRange)
+        .success(function(data) {
+            $scope.DeviceData = data;
+            console.log(data);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+    }; 
 });

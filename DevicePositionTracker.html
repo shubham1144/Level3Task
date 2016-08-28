@@ -1,18 +1,18 @@
 <div class="form-group">
-<label>DeviceIdentity</label>
-<input class="form-control" placeholder="Starttime" ng-model="TimeRange.Device_identity">
+<label>Device Identity</label>
+<input class="form-control" placeholder="Device Identity" ng-model="TimeRange.Device_identity">
 </div>
 
 
 <div class="form-group">
 <label>Starttime</label>
-<input class="form-control" placeholder="Starttime" ng-model="TimeRange.starttime">
+<input class="form-control" type="datetime-local"  name="starttime" ng-model="TimeRange.starttime">
 </div>
 
 
 <div class="form-group">
 <label>Stop time</label>
-<input class="form-control" placeholder="stoptime" ng-model="TimeRange.stoptime">
+<input class="form-control" type="datetime-local"  name="stoptime" ng-model="TimeRange.stoptime">
 </div>
 
 <button ng-click="getDevicePositions()">Analyze</button>

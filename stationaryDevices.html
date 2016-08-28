@@ -1,12 +1,11 @@
 <div class="form-group">
 <label>Starttime</label>
-<input class="form-control" placeholder="Starttime" ng-model="TimeRange.starttime">
+<input class="form-control" type="datetime-local"  name="starttime" ng-model="TimeRange.starttime">
 </div>
-
 
 <div class="form-group">
 <label>Stop time</label>
-<input class="form-control" placeholder="stoptime" ng-model="TimeRange.stoptime">
+<input class="form-control" type="datetime-local"  name="stoptime" ng-model="TimeRange.stoptime">
 </div>
 
 <button ng-click="getStationaryDevicelist()">Analyze</button>

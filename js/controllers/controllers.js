@@ -66,5 +66,19 @@ app.controller("OverSpeedingController", function($scope, $http) {
         .error(function(data) {
             console.log('Error: ' + data);
         });
-    };    
+    };   
+    //Send a request to obtain CPU utilization %
+    $scope.getutilizationEfficiency = function(){
+        console.log('The starttime is : ' +  $scope.TimeRange.starttime);
+    console.log('Trying to connect to node.js server');
+    console.log('The starttime being sent is :' + $scope.starttime);
+        $http.post('/tracker/fetchLocalSysHealth',$scope.TimeRange)
+        .success(function(data) {
+            $scope.Utilization = data;
+            console.log(data);
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+    }; 
 });

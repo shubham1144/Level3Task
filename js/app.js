@@ -40,7 +40,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('SystemHealth', {
             // we'll get to this in a bit 
             url: '/systemhealth',
-            templateUrl: 'home.html'      
+            templateUrl: 'EfficiencyTracker.html'      
         })
         //DevicePositions
         .state('DevicePositions', {

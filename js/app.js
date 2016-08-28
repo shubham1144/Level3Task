@@ -16,7 +16,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('devices', {
             // we'll get to this in a bit 
             url: '/listdevices',
-            templateUrl: 'home.html'      
+            templateUrl: 'listDevices.html'    
         })
         //fetch stationary devices state
         .state('StationaryDevices', {

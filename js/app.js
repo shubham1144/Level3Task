@@ -1,6 +1,6 @@
-var routerApp = angular.module('deviceTracker', ['ui.router']);
+var app = angular.module('deviceTracker', ['ui.router']);
 
-routerApp.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
     
     $urlRouterProvider.otherwise('/home');
     
